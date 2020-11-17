@@ -1,0 +1,31 @@
+/* Notification */
+#notification .notification-content {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#notification .notification-content button {
+  margin-top: 1rem;
+}
+
+/* Box */
+#highlights-panel .highlights-body .box {
+  width: 100%;
+}
+
+/* Newsletter */
+#newsletter .form-newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+#newsletter .email-input {
+  padding: 0.4rem;
+  flex-basis: 0%;
+  margin-right: 0;
+}
+
+#newsletter .btnSubmit {
+  margin-top: 1rem;
+}

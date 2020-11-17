@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-color: #007bc1;
+  --darkblue-color: #004a75;
+  --orange-color: #ff8000;
+  --darkorange-color: #cc6600;
+  --smokegrey-color: #e5e5e5;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Notification */
+#notification {
+  background: var(--smokegrey-color);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#notification a {
+  color: #0000ff;
+}
+
+#notification .notification-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+#notification .notification-content p {
+  margin-right: 1rem;
+}
+
+/* Hero */
+#hero-shot {
+  position: relative;
+  background: url("../img/bg-header.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: var(--smokegrey-color);
+}
+
+#hero-shot .logo {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 30px;
+  left: 30px;
+}
+
+#hero-shot .hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 74, 117, 0.5);
+  height: 100%;
+  overflow: hidden;
+  line-height: 1.5;
+  padding: 0 2rem;
+}
+
+#hero-shot .hero-content .btn {
+  margin-top: 20px;
+}
+
+/* Highlight */
+#highlights-panel {
+  background-color: var(--smokegrey-color);
+  color: #303030;
+}
+
+#highlights-panel .highlights-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#highlights-panel .highlights-body .box {
+  flex: auto;
+  width: 30%;
+  border: 1px solid rgb(168, 168, 168);
+  margin: 20px;
+  padding: 1.5rem;
+}
+
+#highlights-panel .highlights-body .box p {
+  margin-top: 1rem;
+}
+
+#highlights-panel .highlights-body .box-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#highlights-panel .highlights-body .box-header i {
+  font-size: 25px;
+}
+
+/* Footer */
+footer {
+  background: #050328;
+}
+
+footer p {
+  color: white;
+  padding: 50px;
+}
+
+/* newsletter */
+#newsletter {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  background-color: var(--blue-color);
+  color: white;
+  max-width: 640px;
+  z-index: 5;
+  opacity: 0.9;
+  padding: 1.5rem;
+  transition: 400ms;
+}
+
+#newsletter.show {
+  bottom: 0;
+}
+
+#newsletter h2 {
+  margin-bottom: 0.5rem;
+}
+
+#newsletter p {
+  margin-bottom: 0.5rem;
+}
+
+#newsletter .form-newsletter {
+  display: flex;
+}
+
+#newsletter .email-input {
+  padding: 0.4rem;
+  flex-basis: 88%;
+  margin-right: 0.5rem;
+}
+
+#newsletter #newsletterButtonClose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
